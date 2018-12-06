@@ -8,8 +8,8 @@ set(PJSIP_ROOT ${CMAKE_SOURCE_DIR}/3rdparty/prebuild/pjsip)
 #add_compile_options("-m64")
 
 include_directories(${PJSIP_ROOT}/include)
-include_directories(${PJSIP_ROOT}/include/pjlib-util/)
-include_directories(${PJSIP_ROOT}/include/pjnath/)
+# include_directories(${PJSIP_ROOT}/include/pjlib-util/)
+# include_directories(${PJSIP_ROOT}/include/pjnath/)
 
 link_directories(${PJSIP_ROOT}/lib)
 
