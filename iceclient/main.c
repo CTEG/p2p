@@ -1083,7 +1083,7 @@ static void icedemo_console(void)
 
 	while (!app_quit) {
 		char input[80] = {0}, *cmd = NULL;
-		const char *SEP = "\t\r\n";
+		const char *SEP = " ";
 		pj_size_t len;
 
 		icedemo_print_menu();
@@ -1140,7 +1140,7 @@ static void icedemo_console(void)
 					data = "";
 				}
 
-				icedemo_send_data(atoi(comp), data);
+				icedemo_send_data(atoi(comp), "p2p test info .....");
 			}
 		} else if (strcmp(cmd, "help")==0 || strcmp(cmd, "h")==0) {
 			icedemo_help_menu();
